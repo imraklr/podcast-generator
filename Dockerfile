@@ -8,4 +8,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 RUN apt-get update && apt-get install -y python3.10 git
 
-RUN python3 -m pip install PyYAML
+RUN py -m pip install PyYAML
