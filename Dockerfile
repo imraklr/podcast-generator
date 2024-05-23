@@ -12,7 +12,7 @@ RUN python3 -m pip install PyYAML        # Install PyYAML dependency
 
 FROM ubuntu:latest
 
-COPY --from=builder /usr/bin/feed.py
+COPY --from=builder feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
